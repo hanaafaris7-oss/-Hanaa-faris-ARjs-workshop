@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/2.1.7/aframe/build/aframe-ar.js"></script>
+    <title>Display Cube</title>
+</head>
+<body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs>
+        <a-marker preset="hiro" type="pattern" url="/pattern-hiro.patt">
+            <a-box position="-0 0.5 -2" rotation="0 45 45" material="color: red;"></a-box>
+        </a-marker>
+        <a-entity camera></a-entity>
+    </a-scene>
+    
+</body>
+</html>
